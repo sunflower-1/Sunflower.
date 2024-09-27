@@ -18,6 +18,22 @@ body {
     margin: 0 auto; /* Center the container */
 }
 
+header h1 {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 3rem;
+    background: linear-gradient(to right, #1a2222, #330867); /* Keep the gradient */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Transparent so the gradient shows */
+}
+
+header p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    color: #140909;
+    margin-bottom: 2rem;
+}
+
 .projects {
     display: flex;
     flex-direction: column; /* Stack the buttons vertically */
@@ -49,15 +65,7 @@ body {
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
     header h1 {
-        header h1 {
-    font-family: 'Playfair Display SC', serif;
-    font-size: 2rem;
-    background: linear-gradient(to right, #1a2222, #330867);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-
+        font-size: 2rem; /* Adjust font size for smaller screens */
     }
 
     header p {
