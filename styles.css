@@ -39,9 +39,11 @@ header p {
 .projects {
     display: flex;
     justify-content: center;
+    align-items: center; /* This ensures buttons are vertically centered */
     gap: 1.5rem;
     flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
 }
+
 
 .project-button {
     background-color: #2F4F4F;
