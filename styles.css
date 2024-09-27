@@ -11,7 +11,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    overflow: hidden;
     background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
 }
 
@@ -55,6 +54,7 @@ header p {
     transition: background-color 0.3s ease, transform 0.3s ease;
     width: 100%; /* Buttons will take full width on small screens */
     max-width: 250px; /* Set a max width for larger screens */
+    margin: 0 auto; /* Center the buttons */
 }
 
 .project-button:hover {
@@ -74,9 +74,14 @@ header p {
         margin-bottom: 1.5rem;
     }
 
+    .projects {
+        gap: 1rem; /* Reduce the gap between buttons */
+    }
+
     .project-button {
         padding: 0.8rem 1.5rem;
         font-size: 1rem;
+        max-width: 200px; /* Ensure the buttons don’t take up too much space */
     }
 }
 
@@ -92,9 +97,11 @@ header p {
     .projects {
         flex-direction: column; /* Stack buttons vertically */
         gap: 1rem;
+        align-items: center; /* Ensure the buttons are centered */
     }
 
     .project-button {
-        width: 100%; /* Buttons take up the full width on very small screens */
+        width: 100%; /* Buttons take up full width on small screens */
+        max-width: 250px; /* Limit the width */
     }
 }
